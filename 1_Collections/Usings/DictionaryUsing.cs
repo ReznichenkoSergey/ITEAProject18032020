@@ -73,8 +73,6 @@ namespace ITEA_Collections.Usings
                 else
                 {
                     return Dictionary[key];
-                    /*Dictionary.Remove(key);
-                    ToConsole($"Successfully removed #{index}", ConsoleColor.DarkYellow);*/
                 }
 
                 //return Dictionary.GetValueOrDefault(index);
