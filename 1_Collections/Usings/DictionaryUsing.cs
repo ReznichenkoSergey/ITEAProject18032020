@@ -16,6 +16,9 @@ namespace ITEA_Collections.Usings
             Dictionary = new Dictionary<int, string>();
         }
 
+        /// <summary>
+        /// Получение максимального значение ключа в словаре
+        /// </summary>
         private int GetMaxElement
         {
             get
