@@ -17,10 +17,10 @@ namespace ITEA_Collections.Usings
 
         public void Add(object ts)
         {
-            if (ts != null)
-                List.Add(ts.ToString());
+            if (ts is null)
+                throw new Exception("Value is NULL!");
             else
-                throw new Exception("Значение не может быть NULL!");
+                List.Add(ts.ToString());
         }
 
         public void AddMany(object[] ts)
@@ -80,7 +80,7 @@ namespace ITEA_Collections.Usings
         {
             for (int i = 0; i < this.List.Count; i++)
             {
-                ToConsole($"i: {this.List[i]}", ConsoleColor.Cyan);
+                ToConsole($"index i: {this.List[i]}", ConsoleColor.Cyan);
             }
         }
 

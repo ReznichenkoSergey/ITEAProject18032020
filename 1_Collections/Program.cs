@@ -30,8 +30,28 @@ namespace ITEA_Collections
             //Lesson();
             // Additional();
             #region Homework
+
+            ToConsole("***ArrayListUsing***", ConsoleColor.White);
+            ToConsole();
+
             IBaseCollectionUsing collectionUsing = new ArrayListUsing();
             BaseUsingTest.Execute(ref collectionUsing);
+
+            ToConsole();
+            ToConsole("***GenericListUsing***", ConsoleColor.White);
+            ToConsole();
+
+            collectionUsing = new GenericListUsing();
+            BaseUsingTest.Execute(ref collectionUsing);
+
+
+            ToConsole();
+            ToConsole("***DictionaryUsing***", ConsoleColor.White);
+            ToConsole();
+
+            collectionUsing = new DictionaryUsing();
+            BaseUsingTest.Execute(ref collectionUsing);
+
             #endregion
         }
 
