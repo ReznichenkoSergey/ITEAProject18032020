@@ -74,8 +74,6 @@ namespace ITEA_Collections.Usings
                 {
                     return Dictionary[key];
                 }
-
-                //return Dictionary.GetValueOrDefault(index);
             }
             catch (Exception)
             {
@@ -127,9 +125,8 @@ namespace ITEA_Collections.Usings
         {
             //throw new NotImplementedException();
             foreach (var item in Dictionary)
-            {
                 ToConsole($"{item.Key}: {item.Value}, type - {item.GetType().Name}", ConsoleColor.Cyan);
-            }
         }
+    
     }
 }
